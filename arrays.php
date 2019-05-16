@@ -18,7 +18,7 @@
 
     $persona["edad"] = 25;
     $persona["direccion"] = "Winterfell";
-    $persona["hobbies"][1] = "Ser un gil";
+    $persona["hobbies"][3] = "Ser un gil";
 
     var_dump($persona);
 
@@ -158,7 +158,7 @@ asi, que imprima "Bienvenido!", sino, que imprima que hay un error en el login.<
   <strong>
   <?php
     $nombreDeUsuario = "admin";
-    $ContraseniaDeUsuario = "1234";
+    $ContraseniaDeUsuario = "Bananacorp";
 
   /*  if($nombreDeUsuario == "admin" || $ContraseniaDeUsuario == "1234"){
       echo "Bienvenido!";
@@ -253,102 +253,147 @@ siguiente lógica:<br>
 - Si la nota es un 9 imprimir “MUY bien!!”<br>
 - Si la nota es un 10 imprimir “Excelente!!!!!”</p>
    <hr>
-   <strong>
+   <?php
 
-     <?php
+    $nota = 7;
 
-      $nota = -5;
+    switch ($nota) {
+      case ($nota == 10):
+        echo "Excelente";
+        break;
+      case ($nota == 9):
+        echo "Muy Bien";
+        break;
+      case ($nota <= 8 && $nota >= 6):
+        echo "Bien";
+        break;
+      case ($nota <= 5 && $nota >= 4):
+        echo "Zafamos";
+        break;
+      default:
+        echo "Desaprobado";
+        break;
+    }
 
-      switch ($nota) {
-        case ($nota == 10):
-          echo "Excelente";
-          break;
-        case ($nota == 9):
-          echo "Muy Bien";
-          break;
-        case ($nota <= 8 && $nota >= 6):
-          echo "Bien";
-          break;
-        case ($nota <= 5 && $nota >= 4):
-          echo "Zafamos";
-          break;
-        default:
-          echo "Desaprobado";
-          break;
-      }
+    echo "<br><br><hr>";
 
-      echo "<br><br><hr>";
+    switch ($nota) {
+      case ($nota == 10):
+        echo "Excelente";
+        break;
+      case ($nota == 9):
+        echo "Muy Bien";
+        break;
+      case ($nota <= 8 && $nota >= 6):
+        echo "Bien";
+        break;
+      case ($nota <= 5 && $nota >= 4):
+        echo "Zafamos";
+        break;
+      case ($nota < 4 && $nota >= 1):
+        echo "Desaprobado";
+        break;
+      default:
+        echo "El número no es válido";
+        break;
+    }
 
-      switch ($nota) {
-        case ($nota == 10):
-          echo "Excelente";
-          break;
-        case ($nota == 9):
-          echo "Muy Bien";
-          break;
-        case ($nota <= 8 && $nota >= 6):
-          echo "Bien";
-          break;
-        case ($nota <= 5 && $nota >= 4):
-          echo "Zafamos";
-          break;
-        case ($nota < 4 && $nota >= 1):
-          echo "Desaprobado";
-          break;
-        default:
-          echo "El número no es válido";
-          break;
-      }
+    echo "<br><br><hr>
+          <h3>Ejercicio 10</h3>
+          <p>Agregar al switch anterior un mensaje en caso de que la nota no sea un número del 1 al
+   10 diciendo “El número no es válido”. Punto extra: ¿Probaste con números negativos?</p><hr>";
 
-      echo "<br><br><hr>
-            <h3>Ejercicio 10</h3>
-            <p>Agregar al switch anterior un mensaje en caso de que la nota no sea un número del 1 al
-10 diciendo “El número no es válido”. Punto extra: ¿Probaste con números negativos?</p><hr>";
+    switch ($nota) {
+      case ($nota <= 0 || $nota > 10):
+        echo "No es un número válido";
+        break;
+      case ($nota == 10):
+        echo "Excelente";
+        break;
+      case ($nota == 9):
+        echo "Muy Bien";
+        break;
+      case ($nota <= 8 && $nota >= 6):
+        echo "Bien";
+        break;
+      case ($nota <= 5 && $nota >= 4):
+        echo "Zafamos";
+        break;
+      default:
+        echo "Desaprobado";
+        break;
+    }
 
-      switch ($nota) {
-        case ($nota <= 0 || $nota > 10):
-          echo "No es un número válido";
-          break;
-        case ($nota == 10):
-          echo "Excelente";
-          break;
-        case ($nota == 9):
-          echo "Muy Bien";
-          break;
-        case ($nota <= 8 && $nota >= 6):
-          echo "Bien";
-          break;
-        case ($nota <= 5 && $nota >= 4):
-          echo "Zafamos";
-          break;
-        default:
-          echo "Desaprobado";
-          break;
-      }
+    echo "<br><br><br><br><br><br><hr>";
 
-      echo "<br><br><br><br><br><br><hr>";
+    $colorRemera = "Verde";
 
-      $colorRemera = "Verde";
+    switch ($colorRemera) {
+      case "Rojo":
+        echo "La remera es Roja";
+        break;
+      case "Azul":
+        echo "La remera es Axul";
+        break;
+      case "Amarillo":
+        echo "La remera es amarilla";
+        break;
+      default:
+        echo "La remera es multicolor";
+        break;
+    }
 
-      switch ($colorRemera) {
-        case "Rojo":
-          echo "La remera es Roja";
-          break;
-        case "Azul":
-          echo "La remera es Axul";
-          break;
-        case "Amarillo":
-          echo "La remera es amarilla";
-          break;
-        default:
-          echo "La remera es multicolor";
-          break;
-      }
-
-     ?>
+   ?>
+   <hr>
+   <?php
+   $cantantes = [
+        0 => [
+          "nombre" => "Luis",
+          "apellido" => "Miguel"
+        ],
+        1 => [
+          "nombre" => "Charly",
+          "apellido" => "Garcia"
+        ],
+        2 => [
+          "nombre" => "Joaquín",
+          "apellido" => "Sabina"
+        ]
+      ];
 
 
-   </strong>
+    /*$nombres = [];
+    $nombres[] = $cantantes[0]["nombre"];
+    $nombres[] = $cantantes[1]["nombre"];
+    $nombres[] = $cantantes[2]["nombre"];
+
+    var_dump($nombres);
+    echo "<br>";
+    echo "Los nombres son " . $nombres[0] . ", " . $nombres[1] . ", " . $nombres[2];
+    echo "<br>";
+
+    echo "Los cantantes son " . $cantantes[0]["nombre"] . " " . $cantantes[0]["apellido"] . ", " . $cantantes[1]["nombre"]. " " . $cantantes[1]["apellido"] . ", " . $cantantes[2]["nombre"] . " " . $cantantes[2]["apellido"];
+
+    echo "<br>";
+
+    var_dump($nombres);*/
+
+    function bucles($cantantes) {
+     $nombres = [];
+
+
+     foreach ($cantantes as $value) {
+         $nombres[] = $value["nombre"];
+     }
+
+     return $nombres;
+    }
+  var_dump($nombres);
+
+    ?>
+
+   <hr>
+
    <br><br><br>
   </body>
 </html>
