@@ -79,7 +79,7 @@ function revisarMail($email){
 function leerJson(){
   return json_decode(file_get_contents('data/user.json'), true);
 }
-
+*/
 
 
  ?>
