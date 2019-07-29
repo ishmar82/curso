@@ -1,0 +1,42 @@
+[
+    {
+        "name": "adnreuchi",
+        "user": "andre",
+        "email": "andrea@ishmar.com.ar ",
+        "pass": "$2y$10$jaiexxJMzAfAtmOA9JSmNeSNTiFK4WAOSNyY09ZW.XvgvM8QufgQC",
+        "color": "red",
+        "avatarFinal": "data\/avatar\/img-5d21664c8c674.jpg"
+    },
+    {
+        "name": "andre",
+        "user": "andreuchi",
+        "email": "asfkjs@asdad.com",
+        "pass": "$2y$10$8p\/yNWkGDshaZ9mGDpZmAeYC7\/6nkDXiC9609NCBxFZfQ2KNyMWh.",
+        "color": "red",
+        "avatarFinal": "data\/avatar\/img-5d2168345b7c1.jpg"
+    },
+    {
+        "name": "andre",
+        "user": "ishmar",
+        "email": "ishmar.disenio@gmail.com",
+        "pass": "Ab1234",
+        "color": "red",
+        "avatarFinal": "data\/avatar\/img-5d21753794af2.jpg"
+    },
+    {
+        "name": "amdre",
+        "user": "adnre2",
+        "email": " asdad@asddsad.com",
+        "pass": "$2y$10$seG6PjbpE24cgtmsNodnX.Iqu9RN2hkBlcd14qNRMIuikp37E4.Fa",
+        "color": "blue",
+        "avatarFinal": "data\/avatar\/img-5d223f540cbc7.png"
+    },
+    {
+        "name": "jose",
+        "user": "maldo",
+        "email": "asdasdd@asdd.com",
+        "pass": "$2y$10$PoGZDzt8KFLzesTTULUT6emvyVLPxqs34hzB0Alm2ZGEt087ZjgEm",
+        "color": "red",
+        "avatarFinal": "data\/avatar\/img-5d223fc4d4ebd.png"
+    }
+]
